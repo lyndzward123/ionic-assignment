@@ -2,6 +2,12 @@
 <html>
 <style>
 img { max-width: 100%; height: auto; }
+
+.calorific
+ {
+    background-color: blue;
+    color: #FCFAFC;/*colour white*/
+ }
 </style>
   <head>
     <meta charset="utf-8">
@@ -28,7 +34,7 @@ img { max-width: 100%; height: auto; }
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Lyndsey's Calorie Count App</h1>
+        <h1 class="title"style="text-align:center;">Lyndsey's Calorie Count App</h1>
       </ion-header-bar>
       <ion-content>
 	  
@@ -43,9 +49,13 @@ img { max-width: 100%; height: auto; }
         </center>
  </div>
  
+  <center><a class="button button-positive" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center><!-- Resets the count to 0 -->
   
-  
-  
+   <img src="img/logo.jpg" align="middle" >
+   <br>
+   <br>
+   
+   
 	  <div class="item item-divider"> <!--item divider divides list into sections-->
    <b>Breakfast</b> <!--appetisers sections-->
    </div>
@@ -503,7 +513,6 @@ img { max-width: 100%; height: auto; }
 </div>
 </div>
 
-<div>
                                 <center>
 
 <a class="button button-positive" onclick="incCal('+197')">
@@ -511,6 +520,12 @@ img { max-width: 100%; height: auto; }
                                 </a>
                                 </center>
                                 </div>
+								
+								
+<br>
+<br>
+<div>
+</div>
 								
 								
 								
@@ -535,7 +550,11 @@ img { max-width: 100%; height: auto; }
 
            document.getElementById("clearOut").innerHTML = currentCal;
                                 }
-	
+								
+	 function reset() {
+      document.getElementById("CalCount").innerHTML = 0;
+
+    }
 
         </script>
 
