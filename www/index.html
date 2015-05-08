@@ -1,25 +1,21 @@
 <!DOCTYPE html>
+
 <html>
+<!--Inline css-->
 <style>
 img { max-width: 100%; height: auto; }
 
-.calorific
- {
-    background-color: blue;
-    color: #FCFAFC;/*colour white*/
- }
+
 </style>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Lyndsey's Ionic App - Calorie Count</title>
-
+<!--Link up the css-->
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
+ 
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -33,14 +29,13 @@ img { max-width: 100%; height: auto; }
   <body ng-app="calorific">
 
     <ion-pane>
+	<!--header-->
       <ion-header-bar class="bar-stable">
         <h1 class="title"style="text-align:center;">Lyndsey's Calorie Count App</h1>
-      </ion-header-bar>
-      <ion-content>
-	  
-	  <div>
+      	  <div>
         <center>
           <h2>
+		  <!--Create id for the calorie count-->
             <div id="CalCount">
 
         0
@@ -49,25 +44,35 @@ img { max-width: 100%; height: auto; }
         </center>
  </div>
  
+ <!--Create a reset button to reset the calories  back to null-->
   <center><a class="button button-positive" style="margin-bottom:10px;" onclick="reset()">Clear Calories</a></center><!-- Resets the count to 0 -->
   
+  <!--Create a logo image for the header-->
    <img src="img/logo.jpg" align="middle" >
    <br>
    <br>
+ 
+ 
+	  
+	  </ion-header-bar><!--End of the header-->
+      <ion-content><!--Start of ion content-->
+	  
+
+ 
    
    
-	  <div class="item item-divider"> <!--item divider divides list into sections-->
-   <b>Breakfast</b> <!--appetisers sections-->
+	  <div class="item item-divider"> <!--item divider divides into sections-->
+   <b>Breakfast</b> <!--Breakfast sections-->
    </div>
 <div class="list card"> <!--list card-->
 
   <div class="item item-avatar"> <!--Thumbnail image-->
-  <img src="img/toast.jpg">
+  <img src="img/toast.jpg"><!--All images are linked from the img folder using the source tag-->
     <h2>Toast</h2>
     <p>Calories:100</p>
   </div>
 
-<div class="item item-body">
+<div class="item item-body"><!--This is the main image of the food-->
   <img src="img/toast.jpg"width="365px", height="450px"> 
 
 </div>
@@ -76,6 +81,7 @@ img { max-width: 100%; height: auto; }
 
         <div>
         <center>
+		<!--Create a button so when click it will add 100+ calories onto total count-->
 
         <a class="button button-positive" onclick="incCal('+100')">
                 +100
@@ -83,10 +89,10 @@ img { max-width: 100%; height: auto; }
         </center>
         </div>
 
-<div class="list card">
+<div class="list card"> <!--list card-->
 
 <div class="item item-avatar">
-  <img src="img/Omelette.jpg">
+  <img src="img/Omelette.jpg"> <!--Thumbnail image-->
 <h2>Omelette</h2>
 <p>Calories:364</p>
 </div>
@@ -97,13 +103,13 @@ img { max-width: 100%; height: auto; }
 </div>
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 364+ calories onto total count-->
                                 <a class="button button-positive" onclick="incCal('+364')">
                                 +364
                                 </a>
                                 </center>
                                 </div>
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
 <img src="img/breakfast.jpg">
@@ -117,6 +123,7 @@ img { max-width: 100%; height: auto; }
 </div>
 <div>
                                 <center>
+									<!--Create a button so when click it will add 687+ calories onto total count-->
 
                                 <a class="button button-positive" onclick="incCal('+687')">
                                 +687
@@ -126,7 +133,7 @@ img { max-width: 100%; height: auto; }
                                 </center>
                                 </div>
 
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/wheatabix.jpg">
@@ -142,7 +149,7 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 329+ calories onto total count-->
                                 <a class="button button-positive" onclick="incCal('+329')">
                                 +329
                                 </a>
@@ -160,7 +167,7 @@ img { max-width: 100%; height: auto; }
    </div>				
 								
 				
-<div class="list card">
+<div class="list card"><!--list card-->
 <div class="item item-avatar">
   <img src="img/soup.jpg">
 <h2>Soup & Roll</h2>
@@ -174,7 +181,7 @@ img { max-width: 100%; height: auto; }
 </div>
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 218+ calories onto total count-->
                                 <a class="button button-positive" onclick="incCal('+218')">
                                 +218
                                 </a>
@@ -182,7 +189,7 @@ img { max-width: 100%; height: auto; }
                                 </div>
 
 
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/Egg.jpg">
@@ -198,14 +205,14 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 78+ calories onto total count-->
                                 <a class="button button-positive" onclick="incCal('+78')">
                                 +78
                                 </a>
                                 </center>
                                 </div>
 
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/cheese.jpg">
@@ -225,7 +232,7 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 291+ calories onto total count-->
                                 <a class="button button-positive" onclick="incCal('+291')">
                                 +291
                                 </a>
@@ -233,7 +240,7 @@ img { max-width: 100%; height: auto; }
                                 </div>
 
 
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/chips.jpeg">
@@ -249,6 +256,7 @@ img { max-width: 100%; height: auto; }
 </div>
 <div>
                                 <center>
+									<!--Create a button so when click it will add 222+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+222')">
                                 +222
                                 </a>
@@ -260,7 +268,7 @@ img { max-width: 100%; height: auto; }
  </div>
 
 
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/potatoe.jpg">
@@ -277,7 +285,7 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 110+ calories onto total count-->
                                 <a class="button button-positive" onclick="incCal('+110')">
                                 +110
                                 </a>
@@ -285,8 +293,8 @@ img { max-width: 100%; height: auto; }
                                 </div>
 
 
-<div class="list card">
-<div class="item item-avatar">
+<div class="list card"><!--list card-->
+<div class="item item-avatar"><!--Item avatars are essentially a showcase of an image larger than an icon, but smaller than a thumbnail-->
   <img src="img/breadfish.jpg">
 <h2>Fish</h2>
 <p>Calories:211</p>
@@ -300,14 +308,14 @@ img { max-width: 100%; height: auto; }
 </div>
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 211 calories onto total count-->
                                 <a class="button button-positive" onclick="incCal('+211')">
                                 +211
                                 </a>
 
  </center>
                                 </div>
- <div class="list card">
+ <div class="list card"><!--list card, The List is a common and simple way of displaying a list.-->
 
 <div class="item item-avatar">
   <img src="img/steak.jpg">
@@ -322,12 +330,13 @@ img { max-width: 100%; height: auto; }
 </div>
 <div>
 <center>
+	<!--Create a button so when click it will add 210+ calories onto total count-->
         <a class="button button-positive" onclick="incCal('+210')">
                                 +210
                                 </a>
                                 </center>
                                 </div>
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/chicken.jpg">
@@ -344,7 +353,7 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 172+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+172')">
                                 +172
                                 </a>
@@ -355,7 +364,7 @@ img { max-width: 100%; height: auto; }
  <b>Drinks</b> <!--appetisers sections-->
    </div>
 								
-<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/milk.jpg">
@@ -372,7 +381,7 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 146+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+146')">
                                 +146
                                 </a>
@@ -380,7 +389,7 @@ img { max-width: 100%; height: auto; }
                                 </div>
 								
 								
-								<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/coke.jpg">
@@ -397,7 +406,7 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 139+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+139')">
                                 +139
                                 </a>
@@ -405,7 +414,7 @@ img { max-width: 100%; height: auto; }
                                 </div>
 								
 								
-								<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/tea.jpg">
@@ -422,18 +431,19 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 16+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+16')">
                                 +16
                                 </a>
                                 </center>
                                 </div>
-								
+												
+			
 <div class="item item-divider"> <!--item divider divides list into sections-->
 <b>Deserts</b> <!--appetisers sections-->
 </div>
 								
-								<div class="list card">
+<div class="list card"><!--list card-->
 
 <div class="item item-avatar">
   <img src="img/bar.jpg">
@@ -450,16 +460,16 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 458+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+458')">
                                 +458
                                 </a>
                                 </center>
                                 </div>
 								
-								
-								<div class="item item-avatar">
-  <img src="img/cheesecake.jpg">
+<div class="list card"><!--list card-->					
+<div class="item item-avatar">
+<img src="img/cheesecake.jpg">
 <h2>CheeseCake</h2>
 <p>Calories:257</p>
 </div>
@@ -472,13 +482,14 @@ img { max-width: 100%; height: auto; }
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 257+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+257')">
                                 +257
                                 </a>
                                 </center>
-                                </div>
-								<div class="item item-avatar">
+<div class="list card"><!--list card-->                     
+</div>
+<div class="item item-avatar">
   <img src="img/brownie.jpg">
 <h2>Brownie</h2>
 <p>Calories:129</p>
@@ -486,22 +497,20 @@ img { max-width: 100%; height: auto; }
 
 <div class="item item-body">
   <img src="img/brownie.jpg"width="365px", height="450px">
-
-
 </div>
 </div>
 
 <div>
                                 <center>
-
+	<!--Create a button so when click it will add 129+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+129')">
                                 +129
                                 </a>
                                 </center>
                                 </div>
-								
-								<div class="item item-avatar">
-  <img src="img/crisps.jpg">
+<div class="list card"><!--list card--> 			
+<div class="item item-avatar">
+<img src="img/crisps.jpg">
 <h2>Crisps</h2>
 <p>Calories:197</p>
 </div>
@@ -514,7 +523,7 @@ img { max-width: 100%; height: auto; }
 </div>
 
                                 <center>
-
+	<!--Create a button so when click it will add 197+ calories onto total count-->
 <a class="button button-positive" onclick="incCal('+197')">
                                 +197
                                 </a>
@@ -534,6 +543,7 @@ img { max-width: 100%; height: auto; }
 
 </ion-content>
 </ion-pane>
+<!--Javascript for the buttons to work for the calories -->
        <script type="text/javascript">
 
         function incCal(plusMinus) {
