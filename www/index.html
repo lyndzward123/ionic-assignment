@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+<style>
+img { max-width: 100%; height: auto; }
+</style>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Calorie Count</title>
+    <title>Lyndsey's Ionic App - Calorie Count</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -25,10 +28,524 @@
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Calorific</h1>
+        <h1 class="title">Lyndsey's Calorie Count App</h1>
       </ion-header-bar>
       <ion-content>
-      </ion-content>
-    </ion-pane>
+	  
+	  <div>
+        <center>
+          <h2>
+            <div id="CalCount">
+
+        0
+             </div>
+          </h2>
+        </center>
+ </div>
+ 
+  
+  
+  
+	  <div class="item item-divider"> <!--item divider divides list into sections-->
+   <b>Breakfast</b> <!--appetisers sections-->
+   </div>
+<div class="list card"> <!--list card-->
+
+  <div class="item item-avatar"> <!--Thumbnail image-->
+  <img src="img/toast.jpg">
+    <h2>Toast</h2>
+    <p>Calories:100</p>
+  </div>
+
+<div class="item item-body">
+  <img src="img/toast.jpg"width="365px", height="450px"> 
+
+</div>
+
+<br/>
+
+        <div>
+        <center>
+
+        <a class="button button-positive" onclick="incCal('+100')">
+                +100
+        </a>
+        </center>
+        </div>
+
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/Omelette.jpg">
+<h2>Omelette</h2>
+<p>Calories:364</p>
+</div>
+<div class="item item-body">
+<img src="img/Omelette.jpg" width="365px", height="450px">
+
+</div>
+</div>
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+364')">
+                                +364
+                                </a>
+                                </center>
+                                </div>
+<div class="list card">
+
+<div class="item item-avatar">
+<img src="img/breakfast.jpg">
+<h2>Full Breakfast</h2>
+<p>Calories:687</p>
+</div>
+<div class="item item-body">
+<img src="img/breakfast.jpg" width="365px", height="450px">
+
+</div>
+</div>
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+687')">
+                                +687
+                                </a>
+
+
+                                </center>
+                                </div>
+
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/wheatabix.jpg">
+<h2>Wheatabix</h2>
+<p>Calories:329</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/wheatabix.jpg"width="365px", height="450px">
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+329')">
+                                +329
+                                </a>
+                                </center>
+                                </div>
+
+								
+								
+								
+								
+								
+								
+<div class="item item-divider"> <!--item divider divides list into sections-->
+   <b>Lunch</b> <!--appetisers sections-->
+   </div>				
+								
+				
+<div class="list card">
+<div class="item item-avatar">
+  <img src="img/soup.jpg">
+<h2>Soup & Roll</h2>
+<p>Calories:218</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/soup.jpg"width="365px", height="450px">
+
+</div>
+</div>
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+218')">
+                                +218
+                                </a>
+                                </center>
+                                </div>
+
+
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/Egg.jpg">
+<h2>Egg</h2>
+<p>Boiled Calories:78</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/Egg.jpg"width="365px", height="450px">
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+78')">
+                                +78
+                                </a>
+                                </center>
+                                </div>
+
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/cheese.jpg">
+<h2>Grilled Cheese Sandwich </h2>
+<p>Calories:291</p>
+</div>
+
+
+
+<div class="item item-body">
+  <img src="img/cheese.jpg"width="365px", height="450px">
+</div>
+
+</div>
+</div>
+
+
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+291')">
+                                +291
+                                </a>
+                                </center>
+                                </div>
+
+
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/chips.jpeg">
+<h2>Chips</h2>
+
+<p>Calories:364</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/chips.jpeg"width="365px", height="450px">
+
+</div>
+</div>
+<div>
+                                <center>
+<a class="button button-positive" onclick="incCal('+222')">
+                                +222
+                                </a>
+                                </center>
+                                </div>
+								
+ <div class="item item-divider"> <!--item divider divides list into sections-->
+ <b>Dinner</b> <!--appetisers sections-->
+ </div>
+
+
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/potatoe.jpg">
+<h2>Medium Potato</h2>
+<p>Calories:110</p>
+</div>
+
+
+<div class="item item-body">
+  <img src="img/potatoe.jpg"width="365px", height="450px">
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+110')">
+                                +110
+                                </a>
+                                </center>
+                                </div>
+
+
+<div class="list card">
+<div class="item item-avatar">
+  <img src="img/breadfish.jpg">
+<h2>Fish</h2>
+<p>Calories:211</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/breadfish.jpg"width="365px", height="450px">
+<p>
+</p>
+</div>
+</div>
+<div>
+                                <center>
+
+                                <a class="button button-positive" onclick="incCal('+211')">
+                                +211
+                                </a>
+
+ </center>
+                                </div>
+ <div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/steak.jpg">
+<h2>T-Bone-Steak</h2>
+<p>Calories:210</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/steak.jpg"width="365px", height="450px">
+
+</div>
+</div>
+<div>
+<center>
+        <a class="button button-positive" onclick="incCal('+210')">
+                                +210
+                                </a>
+                                </center>
+                                </div>
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/chicken.jpg">
+<h2>Chicken</h2>
+<p>Calories:172</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/chicken.jpg"width="365px", height="450px">
+
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+172')">
+                                +172
+                                </a>
+                                </center>
+                                </div>
+								
+<div class="item item-divider"> <!--item divider divides list into sections-->
+ <b>Drinks</b> <!--appetisers sections-->
+   </div>
+								
+<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/milk.jpg">
+<h2>Milk</h2>
+<p>Calories:146</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/milk.jpg" width="365px", height="450px">
+
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+146')">
+                                +146
+                                </a>
+                                </center>
+                                </div>
+								
+								
+								<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/coke.jpg">
+<h2>Coke</h2>
+<p>Calories:139</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/coke.jpg"width="365px", height="450px">
+
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+139')">
+                                +139
+                                </a>
+                                </center>
+                                </div>
+								
+								
+								<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/tea.jpg">
+<h2>Tea</h2>
+<p>Calories:16</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/tea.jpg"width="365px", height="450px">
+
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+16')">
+                                +16
+                                </a>
+                                </center>
+                                </div>
+								
+<div class="item item-divider"> <!--item divider divides list into sections-->
+<b>Deserts</b> <!--appetisers sections-->
+</div>
+								
+								<div class="list card">
+
+<div class="item item-avatar">
+  <img src="img/bar.jpg">
+<h2>White Choc Bar</h2>
+<p>Calories:458</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/bar.jpg"width="365px", height="450px">
+
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+458')">
+                                +458
+                                </a>
+                                </center>
+                                </div>
+								
+								
+								<div class="item item-avatar">
+  <img src="img/cheesecake.jpg">
+<h2>CheeseCake</h2>
+<p>Calories:257</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/cheesecake.jpg"width="365px", height="450px">
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+257')">
+                                +257
+                                </a>
+                                </center>
+                                </div>
+								<div class="item item-avatar">
+  <img src="img/brownie.jpg">
+<h2>Brownie</h2>
+<p>Calories:129</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/brownie.jpg"width="365px", height="450px">
+
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+129')">
+                                +129
+                                </a>
+                                </center>
+                                </div>
+								
+								<div class="item item-avatar">
+  <img src="img/crisps.jpg">
+<h2>Crisps</h2>
+<p>Calories:197</p>
+</div>
+
+<div class="item item-body">
+  <img src="img/crisps.jpg"width="365px", height="450px">
+
+
+</div>
+</div>
+
+<div>
+                                <center>
+
+<a class="button button-positive" onclick="incCal('+197')">
+                                +197
+                                </a>
+                                </center>
+                                </div>
+								
+								
+								
+								
+
+
+</ion-content>
+</ion-pane>
+       <script type="text/javascript">
+
+        function incCal(plusMinus) {
+
+           var plusMinus = parseInt(plusMinus);
+           var currentCal = parseInt(document.getElementById("CalCount").innerHTML)+plusMinus;
+
+           document.getElementById("CalCount").innerHTML = currentCal;
+                                   }
+        function clearNums (resBut) {
+
+           var resBut = parseInt(resBut);
+           var currentCal = parseInt(document.getElementById("clearOut").innerHTML)+resBut;
+
+           document.getElementById("clearOut").innerHTML = currentCal;
+                                }
+	
+
+        </script>
+
+      
+
+
+
   </body>
 </html>
+
+
+   
+  
